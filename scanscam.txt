@@ -1,0 +1,5 @@
+// first of all i'am just keeping some basic/advanced(maybe) nmap commands .. to recall it whenever the need arises ..
+
+
+
+nmap -sV 192.168.1.0/24 -p 554
