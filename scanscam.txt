@@ -2,4 +2,18 @@
 
 
 
+
+nmap -sS -sV -A 112.28.16.2,24,119,39
 nmap -sV 192.168.1.0/24 -p 554
+
+*exclude from a list exclude.txt . 
+nmap -iL /src/scanlist.txt --excludefile /src/exclude.txt
+
+*OS detection .
+nmap -O 192.18.22.2 
+
+*scan hosts protected by a firewall.
+nmap -PN server111.Blah.co
+
+*scan a firewall for a mac address spoofing .
+nmap -v -sT -PN --spoof-mac MAC-ADDRESS-HERE 192.168.1.1
